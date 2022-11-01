@@ -1,9 +1,0 @@
-73a4740d3ef217a4d7c3d87bf254d0829b0e9560		branch 'aerospike-ruleengine-kv-client' of git.corp.adobe.com:agarwalankit/uis-ces-aerospike
-cf1441cb971c92f92263bbb9fe8d1e269c8f8098	not-for-merge	branch 'benchmark' of git.corp.adobe.com:agarwalankit/uis-ces-aerospike
-eb619dadac85d8d44596a8cf7bb38ab7ee7581de	not-for-merge	branch 'benchmark-50edge' of git.corp.adobe.com:agarwalankit/uis-ces-aerospike
-55b7ba93863b3f5a5bcb10414fb3daa19d575366	not-for-merge	branch 'graph-data-model-full-read' of git.corp.adobe.com:agarwalankit/uis-ces-aerospike
-54ba0dc9647d88bf4a52b9cc6ade73ff70364532	not-for-merge	branch 'graph-data-model-full-write' of git.corp.adobe.com:agarwalankit/uis-ces-aerospike
-3a9f464cfbe137b139657a863ae6b1e1866509de	not-for-merge	branch 'graph-without-edges' of git.corp.adobe.com:agarwalankit/uis-ces-aerospike
-87680dd5df2deefdd4e5bf2607b2153df7204aec	not-for-merge	branch 'kv-client' of git.corp.adobe.com:agarwalankit/uis-ces-aerospike
-ce38b5a0fa91b37fb326d9a8733bc348b65322f2	not-for-merge	branch 'multi-record-tx' of git.corp.adobe.com:agarwalankit/uis-ces-aerospike
-d1366b390bb90a6843c94c85374f0989db52eea9	not-for-merge	branch 'pessimistic' of git.corp.adobe.com:agarwalankit/uis-ces-aerospike
