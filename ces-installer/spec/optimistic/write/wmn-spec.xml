@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cesSpec>
+  <setUpOperation>setup</setUpOperation>
+  <operations>
+    <operation>
+      <name>merge</name>
+      <numThreads>1</numThreads>
+      <maxSteps>6</maxSteps>
+    </operation>
+    <operation>
+      <name>new</name>
+      <numThreads>1</numThreads>
+      <maxSteps>6</maxSteps>
+    </operation>
+  </operations>
+  <tearDownOperation>w-teardown</tearDownOperation>
+</cesSpec>

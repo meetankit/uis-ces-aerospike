@@ -1,0 +1,11 @@
+.idea
+uis-aerospike/target
+ces-installer/target
+ces-app/target
+ces-cli/target
+uis-commons/target
+uis-fdb/target
+kv-client/target
+uis-aerospike-algo/target
+uis-aerospike-kv-client/target
+uis-aerospike-entities/target

@@ -1,0 +1,36 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = git@git.corp.adobe.com:agarwalankit/uis-ces-aerospike.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "benchmark"]
+	remote = origin
+	merge = refs/heads/benchmark
+[branch "benchmark-50edge"]
+	remote = origin
+	merge = refs/heads/benchmark-50edge
+[branch "graph-without-edges"]
+	remote = origin
+	merge = refs/heads/graph-without-edges
+[branch "graph-data-model-full-write"]
+	remote = origin
+	merge = refs/heads/graph-data-model-full-write
+[branch "pessimistic"]
+	remote = origin
+	merge = refs/heads/pessimistic
+[branch "multi-record-tx"]
+	remote = origin
+	merge = refs/heads/multi-record-tx
+[branch "aerospike-ruleengine-kv-client"]
+	remote = origin
+	merge = refs/heads/aerospike-ruleengine-kv-client
+[branch "graph-data-model-full-read"]
+	remote = origin
+	merge = refs/heads/graph-data-model-full-read
+[lfs]
+	repositoryformatversion = 0

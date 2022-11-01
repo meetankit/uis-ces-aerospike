@@ -1,0 +1,10 @@
+./ces-uis-keytests.sh ud
+./ces-uis-keytests.sh dn
+./ces-uis-keytests.sh md
+./ces-uis-keytests.sh dd
+./ces-uis-keytests.sh nn
+./ces-uis-keytests.sh uu
+./ces-uis-keytests.sh mn
+./ces-uis-keytests.sh un
+./ces-uis-keytests.sh um
+./ces-uis-keytests.sh mm

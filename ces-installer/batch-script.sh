@@ -1,0 +1,15 @@
+./ces-uis-usecase.sh bb
+./ces-uis-usecase.sh bd
+./ces-uis-usecase.sh bu
+./ces-uis-usecase.sh bm
+./ces-uis-usecase.sh bn
+./ces-uis-usecase.sh ud
+./ces-uis-usecase.sh dn
+./ces-uis-usecase.sh md
+./ces-uis-usecase.sh dd
+./ces-uis-usecase.sh nn
+./ces-uis-usecase.sh uu
+./ces-uis-usecase.sh mn
+./ces-uis-usecase.sh un
+./ces-uis-usecase.sh um
+./ces-uis-usecase.sh mm

@@ -1,0 +1,111 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- The Basics -->
+  <parent>
+    <groupId>com.adobe.dx.aep.aerospike.poc</groupId>
+    <artifactId>uis-ces-aerospike</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <groupId>com.adobe.dx.aep.aerospike.poc.uis.ces</groupId>
+  <artifactId>ces-installer</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.adobe.dx.aep.aerospike.poc.uis.ces</groupId>
+      <artifactId>ces-cli</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.adobe.dx.aep.aerospike.poc.uis.ces</groupId>
+      <artifactId>ces-cli</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <type>sh</type>
+    </dependency>
+  </dependencies>
+
+  <!-- Build Settings -->
+  <build>
+    <plugins>
+      <!-- The purpose of this step is to create a jar that references
+           all the other jars.
+        -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.4</version>
+        <executions>
+          <execution>
+            <id>make-ces-uis-jar</id>
+            <phase>process-classes</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <configuration>
+              <finalName>ces</finalName>
+              <archive>
+                <manifest>
+                  <addClasspath>true</addClasspath>
+		  <classpathLayoutType>custom</classpathLayoutType>
+		  <customClasspathLayout>lib${file.separator}$${artifact.groupId}-$${artifact.artifactId}-$${artifact.version}.$${artifact.extension}</customClasspathLayout>
+                </manifest>
+              </archive>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.4</version>
+        <executions>
+      	  <!-- The purpose of this step is to package everything
+               into a zip file.
+      	    -->
+      	  <execution>
+            <id>make-ces-uis-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>src/main/assembly/assembly.xml</descriptor>
+              </descriptors>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>1.5</version>
+        <executions>
+          <execution>
+            <id>attach-artifacts</id>
+            <phase>package</phase>
+            <goals>
+              <goal>attach-artifact</goal>
+            </goals>
+            <configuration>
+              <artifacts>
+                <artifact>
+                  <file>${project.build.directory}/ces-installer-${project.version}-ces-uis.zip</file>
+                  <type>zip</type>
+                </artifact>
+              </artifacts>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

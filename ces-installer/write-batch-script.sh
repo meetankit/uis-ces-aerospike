@@ -1,0 +1,15 @@
+./ces-uis-write.sh wbd
+./ces-uis-write.sh wbm
+./ces-uis-write.sh wbu
+./ces-uis-write.sh wbn
+./ces-uis-write.sh wbb
+./ces-uis-write.sh wdd
+./ces-uis-write.sh wmd
+./ces-uis-write.sh wud
+./ces-uis-write.sh wdn
+./ces-uis-write.sh wmm
+./ces-uis-write.sh wmu
+./ces-uis-write.sh wnn
+./ces-uis-write.sh wmn
+./ces-uis-write.sh wun
+./ces-uis-write.sh wuu

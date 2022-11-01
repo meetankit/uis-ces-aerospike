@@ -1,0 +1,17 @@
+# pack-refs with: peeled fully-peeled sorted 
+adcfe11b5e45f6331295e620d2a1cf600bc8385a refs/heads/aerospike-ruleengine-kv-client
+cf1441cb971c92f92263bbb9fe8d1e269c8f8098 refs/heads/benchmark
+eb619dadac85d8d44596a8cf7bb38ab7ee7581de refs/heads/benchmark-50edge
+349501c28eac6c81b721d8a177c486bd0b430a3b refs/heads/graph-data-model-full-write
+3a9f464cfbe137b139657a863ae6b1e1866509de refs/heads/graph-without-edges
+ce38b5a0fa91b37fb326d9a8733bc348b65322f2 refs/heads/multi-record-tx
+d1366b390bb90a6843c94c85374f0989db52eea9 refs/heads/pessimistic
+7b38ce5fde73e6ee2261666826d02507ff2c3207 refs/remotes/origin/aerospike-ruleengine-kv-client
+cf1441cb971c92f92263bbb9fe8d1e269c8f8098 refs/remotes/origin/benchmark
+eb619dadac85d8d44596a8cf7bb38ab7ee7581de refs/remotes/origin/benchmark-50edge
+349501c28eac6c81b721d8a177c486bd0b430a3b refs/remotes/origin/graph-data-model-full-write
+3a9f464cfbe137b139657a863ae6b1e1866509de refs/remotes/origin/graph-without-edges
+87680dd5df2deefdd4e5bf2607b2153df7204aec refs/remotes/origin/kv-client
+ce38b5a0fa91b37fb326d9a8733bc348b65322f2 refs/remotes/origin/multi-record-tx
+d1366b390bb90a6843c94c85374f0989db52eea9 refs/remotes/origin/pessimistic
+45efa35c6aa5e324a5a0ee9a666ed76264d1ed57 refs/stash

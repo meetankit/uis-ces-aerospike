@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- The Basics -->
+  <groupId>com.adobe.dx.aep.aerospike.poc</groupId>
+  <artifactId>uis-ces-aerospike</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>uis-ces-aerospike</name>
+  <description>uis-ces-aerospike Concurrent Execution Simulator</description>
+
+  <modules>
+    <module>ces-app</module>
+    <module>kv-client</module>
+    <module>ces-cli</module>
+    <module>ces-installer</module>
+    <module>uis-aerospike-algo</module>
+    <module>uis-commons</module>
+    <module>uis-fdb</module>
+    <module>uis-aerospike</module>
+    <module>uis-aerospike-kv-client</module>
+    <module>uis-aerospike-entities</module>
+  </modules>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.36</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-jdk14</artifactId>
+      <version>1.7.36</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+    </dependency>
+  </dependencies>
+
+  <!-- Build Settings -->
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+          <fork>true</fork>
+          <encoding>UTF-8</encoding>
+          <maxmem>256</maxmem>
+          <meminitial>128</meminitial>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

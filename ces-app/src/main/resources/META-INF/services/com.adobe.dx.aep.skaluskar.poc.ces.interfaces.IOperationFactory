@@ -1,0 +1,6 @@
+com.adobe.dx.aep.aerospike.poc.ces.graph.optimistic.GraphReadFactory
+com.adobe.dx.aep.aerospike.poc.ces.graph.optimistic.GraphNewFactory
+com.adobe.dx.aep.aerospike.poc.ces.graph.optimistic.GraphMergeFactory
+com.adobe.dx.aep.aerospike.poc.ces.graph.optimistic.GraphDeleteFactory
+com.adobe.dx.aep.aerospike.poc.ces.graph.optimistic.GraphUpdateFactory
+com.adobe.dx.aep.aerospike.poc.ces.graph.optimistic.GraphBulkFactory
